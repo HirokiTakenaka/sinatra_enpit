@@ -3,7 +3,9 @@ require 'sinatra'
 require './name'
 
 get '/' do
-  haml :index,  :format => :html5
+  @title = 'Hello, World!'
+  @subtitle = 'Hello, Hello!!!'
+  erb :index
 
 #<<EOS
 #<html>
