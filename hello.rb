@@ -3,9 +3,11 @@ require 'sinatra'
 require './name'
 
 get '/' do
-  @title = 'Hello, World!'
-  @subtitle = 'Hello, Hello!!!'
-  erb :index
+  File.read('index.html')
+
+#  @title = 'Hello, World!'
+#  @subtitle = 'Hello, Hello!!!'
+#  erb :index
 
 #<<EOS
 #<html>
