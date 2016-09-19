@@ -1,4 +1,6 @@
+# coding: utf-8
 require 'sinatra'
+require './name'
 
 get '/' do
 <<EOS
@@ -14,7 +16,7 @@ get '/' do
 EOS
 end
 
-get '/:name' do |n|
-  "Hello #{n}!"
-end
+# get '/:name' do |n|
+#   "Hello #{n}!"
+# end
 
