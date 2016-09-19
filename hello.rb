@@ -14,3 +14,7 @@ get '/' do
 EOS
 end
 
+get '/:name' do |n|
+  "Hello #{n}!"
+end
+
